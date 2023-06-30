@@ -30,6 +30,16 @@ fn part_1(input: &str) -> i32 {
 }
 
 fn part_2(input: &str) -> i32 {
+    let mut input_split: Vec<&str> = input.lines().collect();
+
+    for dimention in input_split {
+        let mut split = dimention.trim().split('x');
+        // L x W x H
+        let l: i32 = split.next().unwrap().parse().unwrap();
+        let w: i32 = split.next().unwrap().parse().unwrap();
+        let h: i32 = split.next().unwrap().parse().unwrap();
+    }
+
     33
 }
 
